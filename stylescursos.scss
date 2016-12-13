@@ -1,0 +1,62 @@
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    background-image: url("background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 0%;   /* x e y*/
+}
+header{
+  position: fixed;
+  margin-top: 10px;
+  width: 96%;/*esta a 96 para termos uma guia para acertar com o rodapé*/
+}
+}
+.logo{
+  margin-top: 8px;
+  margin-left: 50px;
+  width: 15%;
+}
+.menu{
+  margin-top: -16px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+  color:rgb(255, 255, 255);
+}
+.menu li{
+ margin:-20px 0px 0px 20px;
+ list-style: none;
+}
+
+section{
+  height: 580px;
+  display: flex;
+  align-items:flex-end;
+}
+
+footer{
+  position: fixed;
+  bottom: 10px;
+  width: 96%;
+}
+.partilha{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction:row;
+  margin-top:8px;
+  margin-bottom: 0px;
+}
+.partilha li{
+  width: 20px;
+  margin:0px 10px 0px 10px;
+  list-style: none;
+}
+.partilha li:first-child{
+  margin:0px 50px 0px 10px;
+}
