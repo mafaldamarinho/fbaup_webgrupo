@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -45,13 +46,18 @@ table {
 }
 
 body {
+  background-image: url("imagens/backgrounddois-copy.gif");
+  /*background-size: 100% auto;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 0%;
   /* x e y*/
 }
 
 header {
-  background-color: rgba(0, 161, 255, 0.71);
-  /*position: fixed;*/
+  /*background-color:rgba(0, 161, 255, 0.71);*/
+  position: fixed;
   margin-top: 10px;
   width: 96%;
   /*esta a 96 para termos uma guia para acertar com o rodapé*/
@@ -78,52 +84,44 @@ header {
   list-style: none;
 }
 
-.sectionum {
-  background-color: rgba(13, 0, 255, 0.27);
-  height: 580px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.sectiondois {
+section {
+  /*background-color: orange;*/
   font-family: "josefin Sans", sans-serif;
   font-size: 13pt;
-  position: absolute;
-  top: 200px;
-  width: 50%;
-  /*padding-right: 600px;
-  padding-left: 100px;*/
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.sectiondois h2 {
+.textoapresentaçao {
+  font-family: "josefin Sans", sans-serif;
+  font-size: 11pt;
+  line-height: normal;
+  margin-right: 4%;
+  top: 50px;
+  /*border:2px;
+  border-style: solid;*/
+  width: 320px;
+  height: 380px;
+}
+
+#titulo {
+  font-family: "josefin Sans", sans-serif;
+  font-size: 25pt;
   font-weight: bold;
-  font-size: 50pt;
   padding-bottom: 20px;
 }
 
-.contactos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 2px;
-  border-style: solid;
-  width: 270px;
-  height: 274px;
-}
-
-.contactos li {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 15pt;
-  font-weight: bold;
-  line-height: normal;
+#backdois {
+  position: absolute;
+  top: 0px;
+  width: 942px;
 }
 
 footer {
-  background-color: rgba(0, 161, 255, 0.71);
-  /*position: fixed;*/
+  /*background-color: red;*/
+  position: fixed;
   bottom: 10px;
   width: 96%;
 }
