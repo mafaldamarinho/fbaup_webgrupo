@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  /*background-image: url("imagens/backgrounddois-copy.gif");
+  /*background-size: 100% auto;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 0%;
+  /* x e y*/
+}
+
+.bodyum {
+  background-image: url("imagens/eventoum.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 0%;
+  /* x e y*/
+}
+
+.bodydois {
+  background-image: url("imagens/eventodois.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 0%;
+  /* x e y*/
+}
+
+.bodytres {
+  background-image: url("imagens/eventotres.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 0%;
+  /* x e y*/
+}
+
+header {
+  /*background-color:rgba(0, 161, 255, 0.71);*/
+  position: fixed;
+  margin-top: 10px;
+  width: 96%;
+  /*esta a 96 para termos uma guia para acertar com o rodapé*/
+}
+
+.logo {
+  margin-top: 8px;
+  margin-left: 50px;
+  width: 15%;
+}
+
+.menu {
+  color: #b2b2b2;
+  margin-top: -16px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.menu li {
+  margin: -20px 0px 0px 20px;
+  list-style: none;
+}
+
+.sectionapresentaçao {
+  /*background-color: orange;*/
+  font-family: "josefin Sans", sans-serif;
+  font-size: 13pt;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+section {
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nomedoevento {
+  margin: 100px 0px 0px 80px;
+}
+
+.wrap {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  transform: translateY(-50%);
+}
+
+.boxes {
+  position: absolute;
+  width: 800px;
+  height: 0px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 700px;
+  height: 470px;
+  position: absolute;
+  top: -300px;
+  left: -100px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.box.um {
+  background-color: red;
+}
+
+.box.dois {
+  background-color: blue;
+}
+
+.box.tres {
+  background-color: orange;
+}
+
+.um:checked ~ .boxes > .um,
+.dois:checked ~ .boxes > .dois,
+.tres:checked ~ .boxes > .tres {
+  opacity: 1;
+}
+
+.labels {
+  position: relative;
+  left: 250px;
+  bottom: -150px;
+  transform: translateX(-50%);
+}
+
+.s-index {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+#backum,
+#backdois,
+#backtres {
+  width: 700px;
+}
+
+.evento {
+  display: none;
+}
+
+.um:checked ~ .labels > .u-label,
+.dois:checked ~ .labels > .d-label,
+.tres:checked ~ .labels > .t-label {
+  background-color: #b2b2b2;
+}
+
+.textoapresentaçao {
+  font-family: "josefin Sans", sans-serif;
+  font-size: 11pt;
+  color: black;
+  line-height: normal;
+  margin-right: 4%;
+  top: 50px;
+  /*border:2px;
+  border-style: solid;*/
+  width: 320px;
+  height: 380px;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  line-height: normal;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+#titulo {
+  /*h2 do titulo da apresentaçao*/
+  font-family: "josefin Sans", sans-serif;
+  font-size: 25pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+p:nth-last-child(1) {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+p:nth-last-child(2) {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#pdoseventos {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+footer {
+  /*background-color: red;*/
+  position: fixed;
+  bottom: 10px;
+  width: 96%;
+}
+
+.partilha {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.partilha li {
+  width: 20px;
+  margin: 0px 10px 0px 10px;
+  list-style: none;
+}
+
+.partilha li:first-child {
+  margin: 0px 50px 0px 10px;
+}
