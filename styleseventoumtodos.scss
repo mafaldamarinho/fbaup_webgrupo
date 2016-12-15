@@ -1,5 +1,13 @@
 @import "reset.scss";
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+body {
+  background-image: url("imagens/backgrounddois-copy.gif");
+  /*background-size: 100% auto;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 0%;   /* x e y*/
+}
 .bodyum {
   background-image: url("imagens/eventoum.jpg");
   background-size: 100% auto;
@@ -25,7 +33,7 @@ header{
   /*background-color:rgba(0, 161, 255, 0.71);*/
   position: fixed;
   margin-top: 10px;
-  width: 96%;/*esta a 96 para termos uma guia para acertar com o rodapé*/
+  width: 96%;  /*esta a 96 para termos uma guia para acertar com o rodapé*/
 }
 .logo{
   margin-top: 8px;
@@ -46,6 +54,15 @@ header{
  margin:-20px 0px 0px 20px;
  list-style: none;
 }
+.sectionapresentaçao{
+  /*background-color: orange;*/
+  font-family: "josefin Sans", sans-serif;
+  font-size: 13pt;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 section{
   height: 580px;
   display:flex;
@@ -54,6 +71,18 @@ section{
 }
 .nomedoevento{
   margin: 100px 0px 0px 80px;
+}
+.textoapresentaçao{
+  font-family: "josefin Sans", sans-serif;
+  font-size: 11pt;
+  color: rgb(0, 0, 0);
+  line-height: normal;
+  margin-right: 4%;
+  top:50px;
+  /*border:2px;
+  border-style: solid;*/
+  width: 320px;
+  height: 380px;
 }
 h1{
   font-family: 'Josefin Sans', sans-serif;
@@ -66,15 +95,34 @@ h2{
   font-family: 'Josefin Sans', sans-serif;
   font-size:30px;
   line-height: normal;
-  color: #ffffff;
+  color:#ffffff;
   padding-bottom: 10px;
+}
+#titulo{ /*h2 do titulo da apresentaçao*/
+  font-family: "josefin Sans", sans-serif;
+  font-size: 25pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color:#000000;
 }
 p{
   font-family: 'Josefin Sans', sans-serif;
-  font-size:12px;
+  font-size:14px;
+  color:#000000;
+}
+p:nth-last-child(1){
+  font-weight: bold;
+  padding-top: 10px;
+}
+p:nth-last-child(2){
+  font-weight: bold;
+  padding-top: 10px;
+}
+#pdoseventos{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:11px;
   color: #ffffff;
 }
-
 footer{
   /*background-color: red;*/
   position: fixed;
