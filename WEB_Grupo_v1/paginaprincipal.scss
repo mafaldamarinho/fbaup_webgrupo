@@ -1,0 +1,94 @@
+//---IMPORTS----------
+@import "_vars";
+@import "_mixins";
+
+//---FONT-------------
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+//---BODY----------
+
+body {
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center center;
+}
+
+header{
+  @include margens;
+  top: 25px;
+    img{
+      margin-left: 50px;
+      width: 250px;
+      position:absolute;
+    }
+    ul{
+      @include menudef;
+    }
+    li{
+      margin:-20px 0px 0px 20px;
+      list-style: none;
+    }
+}
+
+section{
+  height: 580px;
+  display: flex;
+  align-items:flex-end;
+  h1{
+    @include titletext;
+  }
+  h2{
+    @include subtitle;
+  }
+  h3{
+    @include text;
+    font-size: 14pt;
+    color: white;
+  }
+}
+
+.caixaum{
+  @include boxes;
+  border-right: 1px solid;
+  margin-top: 65px;
+}
+.caixadois{
+  @include boxes;
+  border-right: 1px solid;
+  margin-top: 65px;
+}
+.caixatres{
+  @include boxes;
+  margin-top: 65px;
+}
+.caixaquatro{
+  @include boxes;
+  border-right: 1px solid;
+  border-top: 1px solid;
+}
+.caixacinco{
+  @include boxes;
+  border-top: 1px solid;
+}
+.caixaseis{
+  @include boxes;
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+
+footer{
+  @include margens;
+  bottom: 10px;
+    ul{
+      @include menudef;
+    }
+    li{
+      margin:0px 0px 0px 20px;
+      list-style: none;
+    }
+    li:first-child{
+      margin:0px 50px 0px 10px;
+    }
+}

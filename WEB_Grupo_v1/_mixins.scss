@@ -1,0 +1,46 @@
+@mixin margens {
+  position: fixed;
+  width: 96%;
+}
+@mixin menudef{
+  font-family: $textfont;
+  font-weight: bold;
+  font-size: 13pt;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@mixin titletext{
+  font-family: $textfont;
+  font-size: 60pt;
+  color: white;
+  margin: 0px 0px 0px 80px;
+}
+
+@mixin subtitle {
+  font-family: $textfont;
+  font-size:30pt;
+  color: white;
+  margin: 0px 0px 10px 80px;
+}
+
+@mixin text {
+  font-family: $textfont;
+  font-size: 14pt;
+  margin: 0px 0px 10px 80px;
+}
+
+@mixin boxes {
+  width: 422px;
+  height: 300px;
+  color: white;
+  font-family: $textfont;
+  font-size: 24pt;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
